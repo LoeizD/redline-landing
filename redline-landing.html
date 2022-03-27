@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@800&family=Montserrat:wght@900&display=swap');
+body {
+	background-color: rgb(0, 0, 0);
+}
+
+.title {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+	letter-spacing: 1px;
+	line-height:2;
+
+}
+
+@media (min-width:900px){
+    h1 {
+        font-size: 150px;
+    }
+}
+@media (max-width:900px){
+    h1 {
+        font-size: 17vw;
+    }
+}
+
+h1 {
+/* 	background-image: url(https://im.ezgif.com/tmp/ezgif-1-b5b7624bdc.gif); */
+	background-image: url(https://im.ezgif.com/tmp/ezgif-1-c56c5d0a6f.webp);
+	background-size: cover;
+	/* color: transparent; */
+	color: rgba(255, 255, 255, 0.096);
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	
+	/* margin: 5px 0; */
+    margin: 0;
+	text-decoration: underline;
+	text-decoration-color: #ee0000;
+	text-decoration-thickness: 15%;
+/* 	text-shadow: 10px 10px #ff000030; */
+}
+/* styling my buttons */
+
+.foot {
+    position: absolute;
+	left: 15px;
+	bottom: 15px;
+}
+
+.white {
+    color: rgb(219, 219, 219);
+    font-family: "Fraunces";
+    font-size: 18px;
+	/* font-family: "Montserrat"; */
+}
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: rgb(35, 35, 39);
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	
+    font-family: "Fraunces";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: rgb(35, 35, 39);
+}
+
+</style>
+<body>
+    <div class="title">
+        <h1>Redline</h1>
+        
+        <p class="white">Racing | Robots | NFT | Metaverse</p>
+        <div class="foota">
+            <a target="_blank" href="https://loeizd.github.io/redline-docs/" class="white-mode">DISCORD</a>
+            <a target="_blank" href="https://loeizd.github.io/redline-docs/" class="white-mode">TWITTER</a>
+            <a target="_blank" href="https://loeizd.github.io/redline-docs/" class="white-mode">DOCS</a>
+            
+        </div>
+        <p class="white">Coming soon to Starknet</p>
+       </div>
+</body>
+</html>
