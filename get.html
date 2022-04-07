@@ -28,12 +28,18 @@
         }).then(r => {
             console.log(r)
             weatherid = parseInt(r.result[0], 16);
-
             document.querySelector('#log').innerHTML = weatherid
+            
+            // window.location.assign(`https://redline.game/get.html?weatherid=${weatherid}`);
+            window.location.href = `https://redline.game/get.html?weatherid=${weatherid}`;
             return r
         })
     }
-    getweather()
+    if (window.location.href.indexOf('weatherid') == -1) {
+        getweather()
+    } else {
+        console.log('retuned weather')
+    }
     // let a = await connectArgentX()
 
 </script>
