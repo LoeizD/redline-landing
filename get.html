@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="starknet-custom.js"></script>
+
+    <title>get weather</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <h2 id="log">?</h2>
+</body>
+<script>
+    const contractAddress = "0x033c33e6756c59831ee773996c09090a16d68298cc3f1b65f9949672c7783b7f";
+
+    let weatherid
+    let data = ["0", "0"]
+    async function getweather() {
+        await starknet.provider.callContract({
+            contractAddress: contractAddress,
+            calldata: data,
+            entrypoint: "get_weather",
+            // entrypoint: "get_random_oracle",
+        }).then(r => {
+            console.log(r)
+            weatherid = parseInt(r.result[0], 16);
+
+            document.querySelector('#log').innerHTML = weatherid
+            return r
+        })
+    }
+    getweather()
+    // let a = await connectArgentX()
+
+</script>
+
+</html>
