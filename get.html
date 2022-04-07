@@ -20,6 +20,7 @@
     let weatherid
     let data = ["0", "0"]
     async function getweather() {
+        document.querySelector('#log').innerHTML = 'starting'
         await starknet.provider.callContract({
             contractAddress: contractAddress,
             calldata: data,
