@@ -20,7 +20,8 @@
     // https://util.turbofish.co/ to get entrypoint, write function name in "selector" and copy hex
     const entrypooint = "0xa0ba2815b6889891354b379259b53509d2d63d68e48553108cd530cc2f2b4a" // get weather
 
-
+    let cityid = window.location.href.split('=')[1]
+    console.log(`cityid = ${cityid}`)
 
     let weatherid
 
@@ -29,7 +30,7 @@
         var data = JSON.stringify({
             "contract_address": contractAddress,
             "entry_point_selector": entrypooint,
-            "calldata": ["0", "0"],
+            "calldata": [cityid, "0"],
             "signature": []
         });
     
