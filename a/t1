@@ -1,0 +1,12 @@
+{
+    "description": "Redline Track 01", 
+    "external_url": "https://redline.game/", 
+    "image": "https://redline.game/a/t01.png", 
+    "name": "Track 01",
+    "attributes": [ 
+        {
+            "trait_type": "Length", 
+            "value": "70"
+        }
+    ] 
+}
