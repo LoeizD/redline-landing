@@ -1,0 +1,28 @@
+{
+    "description": "Redline Robot C", 
+    "external_url": "https://redline.game/", 
+    "image": "https://redline.game/a/rb.png", 
+    "name": "Robot C",
+    "attributes": [ 
+        {
+            "trait_type": "Max Speed", 
+            "value": "440"
+        },
+        {
+            "trait_type": "Acceleration", 
+            "value": "62"
+        },
+        {
+            "trait_type": "Adherence", 
+            "value": "52"
+        },
+        {
+            "trait_type": "Resistance", 
+            "value": "150"
+        },
+        {
+            "trait_type": "Braking", 
+            "value": "62"
+        }
+    ] 
+}
