@@ -1,0 +1,28 @@
+{
+    "description": "Redline Robot A", 
+    "external_url": "https://redline.game/", 
+    "image": "https://redline.game/a/ra.png", 
+    "name": "Robot A",
+    "attributes": [ 
+        {
+            "trait_type": "Max Speed", 
+            "value": "400"
+        },
+        {
+            "trait_type": "Acceleration", 
+            "value": "60"
+        },
+        {
+            "trait_type": "Adherence", 
+            "value": "76"
+        },
+        {
+            "trait_type": "Resistance", 
+            "value": "100"
+        },
+        {
+            "trait_type": "Braking", 
+            "value": "60"
+        }
+    ] 
+}
