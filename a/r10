@@ -1,0 +1,28 @@
+{
+    "description": "Redline Robot B", 
+    "external_url": "https://redline.game/", 
+    "image": "https://redline.game/a/rb.png", 
+    "name": "Robot B",
+    "attributes": [ 
+        {
+            "trait_type": "Max Speed", 
+            "value": "420"
+        },
+        {
+            "trait_type": "Acceleration", 
+            "value": "55"
+        },
+        {
+            "trait_type": "Adherence", 
+            "value": "80"
+        },
+        {
+            "trait_type": "Resistance", 
+            "value": "100"
+        },
+        {
+            "trait_type": "Braking", 
+            "value": "60"
+        }
+    ] 
+}
